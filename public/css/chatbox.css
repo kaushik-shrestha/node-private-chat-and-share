@@ -1,0 +1,36 @@
+.forms{ 
+	background: #000; 
+	padding: 3px; 
+	position: fixed; 
+	bottom: 0; 
+	width: 100%;
+}
+#uplfrm{
+	background: white; 
+	border: none; 
+	padding: 10px; 
+	float:left;
+	width: 10%;
+}
+#msgfrm{
+	background: black; 
+	border: none; 
+	float:right;
+	width: 89%; 
+}
+#m { 
+	border: 0; 
+	padding: 10px; 
+	width: 79%; 
+	margin-right: .5%; 
+}
+#msgfrm button{
+	width: 18%; 
+	background: rgb(130, 224, 255); 
+	border: none; 
+	padding: 10px;
+	width: 20%; 
+}
+#messages { list-style-type: none; margin-top: 60px; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }

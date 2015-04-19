@@ -1,0 +1,18 @@
+<% include header.html %>
+
+<link href="/css/signin.css" rel="stylesheet">
+<div class="container wrap">
+  <div class="alert alert-danger alert-dismissable <%=hidden%>">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <%=msg%>
+  </div>
+  <form class="form-signin" role="form" method="post", action="/">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <input name="user" type="text" class="form-control" placeholder="Username" required autofocus>
+    <input name="pass" type="password" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+    <label class="checkbox">Not Registered? <a href="/signup">Create an account</a></label>
+  </form>
+</div>
+
+<% include footer.html %>

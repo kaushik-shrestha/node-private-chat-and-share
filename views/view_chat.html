@@ -1,0 +1,20 @@
+<% include header.html %>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<link href="/css/chat.css" rel="stylesheet">
+
+<label id="currUser" hidden=true><%=currUser%></label>
+
+<div class="row">
+	<div id="sidebar" class="col-sm-3 col-md-2 sidebar">
+		<ul id="users" class="nav nav-sidebar"></ul>
+	</div>
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<ul id="pings" class="nav nav-sidebar" style="margin-right:150px"></ul>
+	</div>
+</div>
+
+<script src="../js/chat.js"></script>
+
+<% include footer.html %>

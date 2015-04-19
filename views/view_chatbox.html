@@ -1,0 +1,30 @@
+<% include header.html %>
+
+<script src="../js/jquery.ui.widget.js"></script>
+<script src="../js/jquery.iframe-transport.js"></script>
+<script src="../js/jquery.fileupload.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<link href="/css/chatbox.css" rel="stylesheet">
+
+<label id="chatId" hidden="true"><%=chatId%></label>
+<label id="chatFromId" hidden="true"><%=chatFromId%></label>
+<label id="chatFromName" hidden="true"><%=chatFromName%></label>
+<label id="chatToId" hidden="true"><%=chatToId%></label>
+<label id="timestamp" hidden="true"></label>
+
+<ul id="messages"></ul>
+<div class="forms">
+	<form id="uplfrm" method="post" action="/upload" enctype="multipart/form-data">
+		<a id="upl" href="#">
+			<span name="clip" class="glyphicon glyphicon-paperclip"></span>
+		</a>
+		<input type="file" style="display:none"/>
+	</form>
+	<form id="msgfrm">
+		<input id="m" autocomplete="off"/><button>Send</button>
+	</form>
+</div>
+
+<script src="../js/chatbox.js"></script>
+
+<% include footer.html %>
